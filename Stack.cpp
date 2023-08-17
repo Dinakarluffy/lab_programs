@@ -56,13 +56,13 @@ class Stack
     {
     	int n;
     	Stack l;
-    	char c;
-    	do
+    	char c=0;
+    	while(c!=5)
 		  {
 		    cout<<"\n1.push\n2.pop\n3.peek\n4.Show\n5.Exit\n";
-		    cin>>n;
+		    cin>>c;
 		    
-		       switch(n)
+		       switch(c)
 		         {
 		  	        case 1:l.push();break;
 		            case 2:l.pop();break;
@@ -71,9 +71,7 @@ class Stack
 		  	        default: cout<<"Invalid:";
 		  	
 			     }
-			 cout<<"You want to continue press yes means 'y' no means 'n':";
-     		cin>>c;  
 
-		   } while(c=='y');	
+		   } 	
 	}
   
